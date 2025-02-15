@@ -1,0 +1,4 @@
+<div id="todo-item" [ngClass]="todoItem().complete ? 'complete-todo-item' : 'incomplete-todo-item'">
+    <h2>{{ todoItem().title }}</h2>
+    <small>Due by: {{ todoItem().dueBy | date }}</small>
+</div>

@@ -1,0 +1,15 @@
+@if (todos() === undefined) {
+    <p>Loading...</p>
+} @else {
+    <div id="todo-list">
+        @for (todo of todos(); track todo.id) {
+            <app-todo-item (click)="updateTodoItemStatus(todo)" class="todo-item" [todoItem]="todo"/>
+        } @empty {
+            <p>No todo found.</p>
+        }
+    </div>
+}
+
+<div id="todo-form">
+    <app-todo-form (todoSaved)="loadTodos()" />
+</div>

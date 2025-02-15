@@ -1,0 +1,14 @@
+#todo-item {
+    color: #fff;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.complete-todo-item {
+    background-color: rgb(4, 119, 4);
+    text-decoration: line-through;
+}
+
+.incomplete-todo-item {
+    background-color: rgb(128, 25, 25);
+}

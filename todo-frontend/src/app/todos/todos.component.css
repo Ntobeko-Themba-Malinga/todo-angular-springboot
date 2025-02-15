@@ -1,0 +1,27 @@
+#todo-list {
+    background-color: #ececec;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-block: 1rem;
+}
+
+.todo-item {
+    flex: 1;
+    cursor: pointer;
+}
+
+.todo-item:hover {
+    flex: 2;
+}
+
+#todo-form {
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+}
+

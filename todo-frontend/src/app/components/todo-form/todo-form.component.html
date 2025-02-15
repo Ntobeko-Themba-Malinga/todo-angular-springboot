@@ -1,0 +1,13 @@
+<form [formGroup]="todoForm" (ngSubmit)="saveTodo()">
+    <div class="todo-control">
+        <label for="todo-title">Title</label>
+        <input type="text" id="todo-title" name="todo-title" formControlName="title" placeholder="e.g Something"> 
+    </div>
+    <div class="todo-control">
+        <label for="todo-duedate">Due date</label>
+        <input type="datetime-local" id="todo-duedate" name="todo-duedate" formControlName="dueBy">
+    </div>
+    <div id="form-buttons">
+        <button id="add-button" type="submit">Add</button>
+    </div>
+</form>
